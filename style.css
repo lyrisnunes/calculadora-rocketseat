@@ -1,15 +1,73 @@
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+:root{
+  --geral:#FFFFFF ;
+  --bg:#0B0B0C;
+  --transparent:#121214;
+  --input: #9466FF;
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--bg);
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
-.card {
-  background-color: #ffffff;
-  max-width: 800px;
-  margin-inline: 0 auto;
+.container{
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card{
+  background-color:var(--transparent) ;
+  border: 1px solid #625f67;
+  height: 350px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom:1px solid var(--input);
+}
+
+.input-wrapper{
+  margin-bottom: 1rem;
+}
+
+form label{
+  font-size: 1rem;
+  color: #625f67;
+  margin: .2rem 0;
+  display: block;
+}
+
+input{
+  width: 100%;
+  background-color: var(--transparent);
+  color: var(--geral);
+  padding: .5rem 0;
+  border: 1px solid #625f67;
+}
+
+button{
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--input);
+  color: #FFFFFF;
+  padding: .8rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover{
+  background-color: var(--input);
 }
