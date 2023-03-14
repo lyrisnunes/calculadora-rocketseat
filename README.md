@@ -1,6 +1,5 @@
-# calculadora-rocketseat
-É uma aplicação que calcula o IMC.
-<h1><img src="img/calculadora.gif"></h1>
+
+<h1 text="center"><img src="img/calculadora.gif"></h1>
 
 ##  Cálculo de IMC 
 
