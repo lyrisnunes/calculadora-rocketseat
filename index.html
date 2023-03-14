@@ -10,10 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <script src="js/js.js" defer type="module"></script>
 </head>
 
 <body>
+    <div class="alert-error">
+        Digite somento número
+    </div>
+
     <div class="container">
         <main class="card">
             <form action="">
@@ -24,15 +28,29 @@
                 </div>
 
                 <div class="input-wrapper">
-                    <label for="height">Altura (m)</label>
+                    <label for="height">Altura (c)</label>
                     <input id="height" type="text" placeholder="165">
                 </div>
 
                 <button type="submit">Calcular IMC</button>
+                 
             </form>
         </main>
     </div>
-    <script src="js.js" defer></script>
+
+    <div class="modal-wrapper ">
+        <div class="modal card">
+            <h2 class="title">
+
+                <button class="close">x</button>
+
+                
+                <span>Seu imc é de </span>
+            </h2>
+        </div>
+    </div>
+
+    
 </body>
 
 </html>
